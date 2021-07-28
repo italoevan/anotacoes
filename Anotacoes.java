@@ -16,9 +16,16 @@ public class Anotacoes {
 			System.out.println(list.get(i)+ "[index:"+i+"]");
 		}
 	}
+
+
 	
 	public static void excludeItem(int index) {
+		try{
 		list.remove(index);
 		readAllItems();
+		}catch(Exception e){
+			System.out.println("Algo deu errado :(");
+		}
+		
 	}
 }
